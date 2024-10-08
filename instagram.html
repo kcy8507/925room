@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,21 +11,21 @@
   <meta property="og:site_name" content="website" />
   <meta property="og:title" content="925room" />
   <meta property="og:description" content="925room" />
-  <meta property="og:image" content="./images/main_bg.png" />
+  <meta property="og:image" content="{% static "images/main_bg.png" %}" />
   <meta property="og:url" content="www.925room.com" />
 
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="925room" />
   <meta property="twitter:title" content="925room" />
   <meta property="twitter:description" content="925room" />
-  <meta property="twitter:image" content="./images/main_bg.png" />
+  <meta property="twitter:image" content="{% static "images/main_bg.png" %}" />
   <meta property="twitter:url" content="www.925room.com" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static "images/favicon.png" %}">
 
-  <link rel="stylesheet" href="/css/reset.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/main.js" defer></script>
+  <link rel="stylesheet" href="{% static "css/reset.css" %}" />
+  <link rel="stylesheet" href="{% static "css/style.css" %}" />
+  <script src="{% static "js/main.js" %}" defer></script>
   <title>925room</title>
 </head>
 
@@ -33,10 +34,10 @@
     <div class="inner">
       <div class="nav__container">
         <div class="nav__toggle">
-          <a href="#" class="navbar__toggleBtn"><img src="/images/hamburger_blk.svg" /></a>
+          <a href="#" class="navbar__toggleBtn"><img src="{% static "images/hamburger_blk.svg" %}" /></a>
         </div>
         <div class="nav__logo">
-          <a href="/index.html"><img src="/images/logo_blk.png" /></a>
+          <a href="/"><img src="{% static "images/logo_blk.png" %}" /></a>
         </div>
       </div>
     </div>
@@ -44,42 +45,42 @@
   <section id="popup__nav">
     <div class="popup__nav-container">
       <div class="popup__nav-cancel">
-        <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+        <a href="#" class="cancel"><img src="{% static "images/cancel.svg" %}" /></a>
       </div>
       <div class="popup__nav-logo">
-        <a href="/index.html"><img src="/images/logo_blk.png" /></a>
+        <a href="/"><img src="{% static "images/logo_blk.png" %}" /></a>
       </div>
       <ul class="popup__nav-list">
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/product.html">product</a></li>
-        <li><a href="/instagram.html">portfolio</a></li>
-        <li><a href="/notice.html">notice</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/product">product</a></li>
+        <li><a href="/instagram">portfolio</a></li>
+        <li><a href="/notices">notice</a></li>
 
-        <li><a href="/contact.html">contact</a></li>
+        <li><a href="/contact">contact</a></li>
       </ul>
     </div>
   </section>
   <section id="instagram">
     <div class="inner">
       <div class="instagram_container">
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf1.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf2.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf3.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf4.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf5.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf6.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf7.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf8.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf9.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf10.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf11.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf12.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf13.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf14.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf15.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf16.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf17.png" /></a>
-        <a href="https://www.instagram.com/925room_/"><img src="/images/pf18.png" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf1.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf2.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf3.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf4.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf5.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf6.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf7.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf8.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf9.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf10.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf11.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf12.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf13.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf14.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf15.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf16.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf17.png" %}" /></a>
+        <a href="https://www.instagram.com/925room_/"><img src="{% static "images/pf18.png" %}" /></a>
       </div>
     </div>
   </section>

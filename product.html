@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,21 +11,21 @@
   <meta property="og:site_name" content="website" />
   <meta property="og:title" content="925room" />
   <meta property="og:description" content="925room" />
-  <meta property="og:image" content="./images/main_bg.png" />
+  <meta property="og:image" content="{% static "images/main_bg.png" %}" />
   <meta property="og:url" content="www.925room.com" />
 
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="925room" />
   <meta property="twitter:title" content="925room" />
   <meta property="twitter:description" content="925room" />
-  <meta property="twitter:image" content="./images/main_bg.png" />
+  <meta property="twitter:image" content="{% static "images/main_bg.png" %}" />
   <meta property="twitter:url" content="www.925room.com" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static "images/favicon.png" %}">
 
-  <link rel="stylesheet" href="/css/reset.css" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="/js/main.js" defer></script>
+  <link rel="stylesheet" href="{% static "css/reset.css" %}" />
+  <link rel="stylesheet" href="{% static "css/style.css" %}" />
+  <script src="{% static "js/main.js" %}" defer></script>
   <title>925room</title>
 </head>
 
@@ -33,10 +34,10 @@
     <div class="inner">
       <div class="nav__container">
         <div class="nav__toggle">
-          <a href="#" class="navbar__toggleBtn"><img src="/images/hamburger_blk.svg" /></a>
+          <a href="#" class="navbar__toggleBtn"><img src="{% static "images/hamburger_blk.svg" %}" /></a>
         </div>
         <div class="nav__logo">
-          <a href="/index.html"><img src="/images/logo_blk.png" /></a>
+          <a href="/"><img src="{% static "images/logo_blk.png" %}" /></a>
         </div>
       </div>
     </div>
@@ -44,18 +45,18 @@
   <section id="popup__nav">
     <div class="popup__nav-container">
       <div class="popup__nav-cancel">
-        <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+        <a href="#" class="cancel"><img src="{% static "images/cancel.svg" %}" /></a>
       </div>
       <div class="popup__nav-logo">
-        <a href="/index.html"><img src="/images/logo_blk.png" /></a>
+        <a href="/"><img src="{% static "images/logo_blk.png" %}" /></a>
       </div>
       <ul class="popup__nav-list">
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/product.html">product</a></li>
-        <li><a href="/instagram.html">portfolio</a></li>
-        <li><a href="/notice.html">notice</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/product">product</a></li>
+        <li><a href="/instagram">portfolio</a></li>
+        <li><a href="/notices">notice</a></li>
 
-        <li><a href="/contact.html">contact</a></li>
+        <li><a href="/contact">contact</a></li>
       </ul>
     </div>
   </section>
@@ -66,7 +67,7 @@
           href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
           <div class="product__box-1">
             <div class="product__img">
-              <img src="/images/product_1.png" alt="" />
+              <img src="{% static "images/product_1.png" %}" alt="" />
             </div>
             <div class="product__text">band ring / sliver</div>
           </div>
@@ -75,7 +76,7 @@
           href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
           <div class="product__box-2">
             <div class="product__img">
-              <img src="/images/product_2.png" alt="" />
+              <img src="{% static "images/product_2.png" %}" alt="" />
             </div>
             <div class="product__text">wax curving ring / sliver</div>
           </div>
@@ -84,7 +85,7 @@
           href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
           <div class="product__box-3">
             <div class="product__img">
-              <img src="/images/product_3.png" alt="" />
+              <img src="{% static "images/product_3.png" %}" alt="" />
             </div>
             <div class="product__text">wax curving Necklace / sliver</div>
           </div>
@@ -93,7 +94,7 @@
           href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
           <div class="product__box-4">
             <div class="product__img">
-              <img src="/images/product_4.png" alt="" />
+              <img src="{% static "images/product_4.png" %}" alt="" />
             </div>
             <div class="product__text">punching ring / sliver</div>
           </div>
