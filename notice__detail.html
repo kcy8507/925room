@@ -24,7 +24,10 @@
 
   <link rel="stylesheet" href="/css/reset.css" />
   <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="/js/main.js" defer></script>
+  <script data-cfasync="false" type="text/javascript" src="/js/form-submission-handler.js"></script>
   <title>925room</title>
 </head>
 
@@ -54,51 +57,24 @@
         <li><a href="/product.html">product</a></li>
         <li><a href="/instagram.html">portfolio</a></li>
         <li><a href="/notice.html">notice</a></li>
-
         <li><a href="/contact.html">contact</a></li>
       </ul>
     </div>
   </section>
-  <section id="product">
+  <section class="notice__detail">
+    <div class="fixed__nav-space"></div>
     <div class="inner">
-      <div class="product__container">
-        <a
-          href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
-          <div class="product__box-1">
-            <div class="product__img">
-              <img src="/images/product_1.png" alt="" />
-            </div>
-            <div class="product__text">band ring / sliver</div>
-          </div>
-        </a>
-        <a
-          href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
-          <div class="product__box-2">
-            <div class="product__img">
-              <img src="/images/product_2.png" alt="" />
-            </div>
-            <div class="product__text">wax curving ring / sliver</div>
-          </div>
-        </a>
-        <a
-          href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
-          <div class="product__box-3">
-            <div class="product__img">
-              <img src="/images/product_3.png" alt="" />
-            </div>
-            <div class="product__text">wax curving Necklace / sliver</div>
-          </div>
-        </a>
-        <a
-          href="https://map.naver.com/p/entry/place/1354774018?placePath=%252Fhome%253Fentry%253Dplt&searchType=place&lng=127.7078904&lat=34.7595636&c=15.00,0,0,0,dh">
-          <div class="product__box-4">
-            <div class="product__img">
-              <img src="/images/product_4.png" alt="" />
-            </div>
-            <div class="product__text">punching ring / sliver</div>
-          </div>
-        </a>
+      <div class="notice__detail-title">
+        <p class="notice__detail-title--top">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</p>
+        <p class="notice__detail-title--bottom">2022 - 00 - 00</p>
+        <hr>
       </div>
+      <div class="notice__detail-text">
+        <p class="notice__detail-text-content"></p>
+      </div>
+      <a href="./notice.html"><button class="notice__detail-btn">목록</button>
+      </a>
+    </div>
     </div>
   </section>
   <section id="footer">
@@ -116,6 +92,8 @@
   </section>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
