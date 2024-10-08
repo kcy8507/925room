@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="website" />
+  <meta property="og:title" content="925room" />
+  <meta property="og:description" content="925room" />
+  <meta property="og:image" content="./images/main_bg.png" />
+  <meta property="og:url" content="www.925room.com" />
+
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="925room" />
+  <meta property="twitter:title" content="925room" />
+  <meta property="twitter:description" content="925room" />
+  <meta property="twitter:image" content="./images/main_bg.png" />
+  <meta property="twitter:url" content="www.925room.com" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
+
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="/js/main.js" defer></script>
+  <script data-cfasync="false" type="text/javascript" src="/js/form-submission-handler.js"></script>
+  <title>925room</title>
+</head>
+
+<body>
+  <section id="nav">
+    <div class="inner">
+      <div class="nav__container">
+        <div class="nav__toggle">
+          <a href="#" class="navbar__toggleBtn"><img src="/images/hamburger_blk.svg" /></a>
+        </div>
+        <div class="nav__logo">
+          <a href="/index.html"><img src="/images/logo_blk.png" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="popup__nav">
+    <div class="popup__nav-container">
+      <div class="popup__nav-cancel">
+        <a href="#" class="cancel"><img src="/images/cancel.svg" /></a>
+      </div>
+      <div class="popup__nav-logo">
+        <a href="/index.html"><img src="/images/logo_blk.png" /></a>
+      </div>
+      <ul class="popup__nav-list">
+        <li><a href="/about.html">about</a></li>
+        <li><a href="/product.html">product</a></li>
+        <li><a href="/instagram.html">portfolio</a></li>
+        <li><a href="/contact.html">contact</a></li>
+      </ul>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="inner">
+      <div class="contact__container">
+        <div class="contact__text-container">
+          <div class="contact__title">
+            <img src="/images/contact.png" alt="" />
+          </div>
+          <div class="contact__text">
+            925room에게 부담없이 문의주세요<br />
+            문의 내용 확인 후 연락 드리겠습니다.
+          </div>
+          <div class="contact__myTel"><i class="fas fa-phone-alt"></i>010-9277-9250</div>
+          <div class="contact__myEmail"><i class="far fa-envelope"></i>925room.official@gmail.com</div>
+        </div>
+        <form class="contact__contents gform" method="POST"
+          action="https://script.google.com/macros/s/AKfycbwmmtQclhd2Sz28FjWNXYczhpfeEBMAQyU6KT3oYZyGQpAxqHN5OzDvm-vh17NuQIAJNA/exec">
+          <div class="contact__personalform">
+            <div class="contact__form">
+              <label>이름</label>
+              <input id="name" name="이름" required />
+            </div>
+            <div class="contact__form">
+              <label>전화번호</label>
+              <input id="phone" name="전화번호" required />
+            </div>
+          </div>
+          <div class="contact__form">
+            <label>이메일주소</label>
+            <input id="email" name="이메일주소" type="text" value="" required />
+          </div>
+          <div class="contact__contents">
+            <label>문의내용</label>
+            <textarea id="message" name="문의내용"></textarea>
+          </div>
+          <fieldset class="pure-group honeypot-field" style="display: none">
+            <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be
+              empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+            <input id="honeypot" type="text" name="honeypot" value="" />
+          </fieldset>
+          <button class="contact__btn" id="sendBtn">문의하기</button>
+          <div style="display:none" class="thankyou_message" id="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below -->
+            <p>🚀연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다🚀</p>
+            </h2>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <p class="footer__info">
+      +82 10-9277-9250
+      <br />
+      925room
+      <br /><br />
+      Company:925room Ceo:Lee yerim Address:yeosu,59699
+      <br />
+      business license.781-25-01741
+      <br />
+      copyright:@925room
+    </p>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script data-cfasync="false" type="text/javascript"
+    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body>
+
+</html>
