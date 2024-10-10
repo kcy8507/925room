@@ -24,10 +24,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{% static "images/favicon.png" %}">
 
   <link rel="stylesheet" href="{% static "css/reset.css" %}" />
-  <link rel="stylesheet" href="{% static "css/style.css" %}" />
-
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="{% static "css/style.css" %}" />
+
 
   <script src="{% static "js/main.js" %}" defer></script>
   <title>925room</title>
@@ -68,8 +68,8 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="{% static "images/main_bg.png" %}" alt="메인슬라이드"></div>
-        <div class="swiper-slide"><img src="{% static "images/main_bg.png" %}" alt="메인슬라이드"></div>
-        <div class="swiper-slide"><img src="{% static "images/main_bg.png" %}" alt="메인슬라이드"></div>
+        <div class="swiper-slide"><img src="{% static "images/main_bg2.png" %}" alt="메인슬라이드"></div>
+        <div class="swiper-slide"><img src="{% static "images/main_bg3.png" %}" alt="메인슬라이드"></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -84,6 +84,16 @@
       slidesPerView: 1,
       spaceBetween: 0,
       mousewheel: true,
+          autoplay: {
+        delay: 3500,
+        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+        desableOnInteraction: false,
+        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+      },
+      speed: 1e3,
+      // 슬라이드가 자동으로 전환되는 속도를 설정
+           loop: true,
+
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -91,19 +101,6 @@
     });
   </script>
 
-  <section id="footer">
-    <p class="footer__info">
-      +82 10-9277-9250
-      <br />
-      925room
-      <br /><br />
-      Company:925room Ceo:Lee yerim Address:yeosu,59699
-      <br />
-      business license.781-25-01741
-      <br />
-      copyright:@925room
-    </p>
-  </section>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>

@@ -89,74 +89,7 @@
               <td>{{ notice.created_at|date_blank }}</td>
             </tr>
             {% endfor %}
-            <tr>
-              <td>2</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
-            <tr>
-              <td>11</td>
-              <th><a href="#">회사의 브랜드 가이드에 맞게 주문제작이 가능한가요?</a></th>
-              <td>2022 - 00 - 00</td>
-            </tr>
           </tbody>
-          <tfoot class="foot">
-            <tr>
-              <td colspan="4">
-                <span class="arrow radius-left">＜</span>
-                {% page_range current_page as pr %}
-                {% for i in pr %}
-                  {% if total_page < i %}
-                  {% elif current_page == i %}
-                    <a href="?page={{i}}" class="txt_point">{{ i }}</a>
-                  {% else %}
-                    <a href="?page={{i}}">{{ i }}</a>
-                  {% endif %}
-                {% endfor %}
-                <span class="arrow radius-right">＞</span>
-              </td>
-            </tr>
-          </tfoot>
         </table>
       </div>
     </div>
