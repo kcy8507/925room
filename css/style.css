@@ -566,6 +566,7 @@ section.notice {
 }
 .notice__detail-img-content img {
   width: 100%;
+  max-width: 500px;
   border-radius: 20px;
   height: auto;
 }
