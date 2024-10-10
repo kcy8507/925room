@@ -1,0 +1,19 @@
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    background-color: #f3f4f7;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: .375rem;
+}
+
+textarea {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    background-color: #f3f4f7;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: .375rem;
+}
