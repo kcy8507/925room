@@ -72,8 +72,9 @@
       <div class="notice__detail-text">
         <p class="notice__detail-text-content">{{ notice.content }}</p>
         <div class="notice__detail-img-content">
-          <img src="{% static "images/pf3.png" %}" />
-          <img src="{% static "images/pf3.png" %}" />
+          {% for img in notice.image %}
+            <img src="{{ img.image.url }}" />
+          {% endfor %}
         </div>
       </div>
       <a href="/notices"><button class="notice__detail-btn">
