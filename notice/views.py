@@ -54,14 +54,16 @@ class NoticeView(
 def notice(request):
     current_page = request.GET.get("page", 1)
     notices = Notice.objects.filter().order_by("-created_at", "-id")
-    pagination = Paginator(notices, 8)
-    page = pagination.get_page(current_page)
-    serializer = NoticeSerializer(pagination.page(current_page), many=True)
+    # 페이지네이션
+    # pagination = Paginator(notices, 8)
+    # page = pagination.get_page(current_page)
+    # serializer = NoticeSerializer(pagination.page(current_page), many=True)
+    serializer = NoticeSerializer(notices, many=True)
     context = {
         "notices": serializer.data,
-        "total_page": pagination.num_pages,
-        "current_page": int(current_page),
-        "page": page,
+        # "total_page": pagination.num_pages,
+        # "current_page": int(current_page),
+        # "page": page,
     }
     return render(
         request,

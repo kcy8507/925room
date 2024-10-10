@@ -70,7 +70,7 @@
         <hr>
       </div>
       <div class="notice__detail-text">
-        <p class="notice__detail-text-content">{{ notice.content }}</p>
+        <p class="notice__detail-text-content">{{ notice.content|safe|linebreaksbr }}</p>
         <div class="notice__detail-img-content">
           {% for img in notice.image %}
             <img src="{{ img.image.url }}" />
