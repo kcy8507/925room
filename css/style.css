@@ -449,12 +449,13 @@ section.notice {
 
 .board-table thead {
   font-weight: 500;
-  height: 4.3rem;
+  height: 43px;
 }
 
 .board-table thead th {
   vertical-align: middle;
   color: #3b3b3b;
+  height: 50px;
 }
 
 .board-table a:hover {
